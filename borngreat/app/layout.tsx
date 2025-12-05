@@ -32,3 +32,47 @@ export default function RootLayout({
     </html>
   );
 }
+
+
+
+
+
+// // app/layout.tsx
+// import type { Metadata } from "next";
+// import { Mochiy_Pop_One, Nunito } from "next/font/google";
+// import "./globals.css";
+
+// // ← Perfect daycare heading font (cute & bold)
+// const mochiy = Mochiy_Pop_One({
+//   weight: "400",
+//   subsets: ["latin"],
+//   variable: "--font-mochiy",
+// });
+
+// // ← Perfect readable body font for parents
+// const nunito = Nunito({
+//   weight: ["400", "600", "700"],
+//   subsets: ["latin"],
+//   variable: "--font-nunito",
+// });
+
+// export const metadata: Metadata = {
+//   title: "Happy Little Learners Daycare",
+//   description: "A warm and nurturing daycare for your child",
+// };
+
+// export default function RootLayout({
+//   children,
+// }: {
+//   children: React.ReactNode;
+// }) {
+//   return (
+//     <html lang="en">
+//       <body
+//         className={`${mochiy.variable} ${nunito.variable} font-nunito antialiased`}
+//       >
+//         {children}
+//       </body>
+//     </html>
+//   );
+// }

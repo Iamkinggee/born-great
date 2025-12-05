@@ -4,7 +4,7 @@
 "use client";
 
 import React from 'react';
-import { ShoppingCart, Menu, X } from 'lucide-react';
+import {  Menu, X } from 'lucide-react';
 import { useState } from 'react';
 import Image from 'next/image';
 
@@ -30,20 +30,20 @@ export default function Hero() {
               <a href="#" className="text-white text-xs sm:text-sm font-medium hover:opacity-80 transition">Home</a>
               <a href="#" className="text-white text-xs sm:text-sm font-medium hover:opacity-80 transition">About</a>
               <a href="#" className="text-white text-xs sm:text-sm font-medium hover:opacity-80 transition">Courses</a>
-              <a href="#" className="text-white text-xs sm:text-sm font-medium hover:opacity-80 transition">Pricing</a>
+              {/* <a href="#" className="text-white text-xs sm:text-sm font-medium hover:opacity-80 transition">Pricing</a>
               <a href="#" className="text-white text-xs sm:text-sm font-medium hover:opacity-80 transition">Products</a>
               <a href="#" className="text-white text-xs sm:text-sm font-medium hover:opacity-80 transition">Pages</a>
-              <a href="#" className="text-white text-xs sm:text-sm font-medium hover:opacity-80 transition">Contact</a>
+              <a href="#" className="text-white text-xs sm:text-sm font-medium hover:opacity-80 transition">Contact</a> */}
             </div>
 
             {/* Right Section */}
             <div className="hidden md:flex items-center gap-4">
               <button className="relative">
-                <ShoppingCart className="w-6 h-6 text-white" />
-                <span className="absolute -top-2 -right-2 bg-yellow-400 text-blue-600 w-5 h-5 rounded-full flex items-center justify-center text-xs font-bold">0</span>
+       
+              
               </button>
               <button className="bg-gray-800 hover:bg-gray-900 text-white px-4 lg:px-6 py-2 text-sm rounded-lg font-medium transition">
-                Guardian Login
+               Contact Us
               </button>
             </div>
 
@@ -176,8 +176,6 @@ export default function Hero() {
       </div>
 
 
-      {/* Gradient Overlay */}
-      <div className="absolute bottom-0 w-full h-20 sm:h-24 bg-gradient-to-t from-blue-200 to-transparent pointer-events-none"></div>
     </div>
   );
 }
